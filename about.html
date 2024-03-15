@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Talk!</title>
+    <style>
+    .container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #ffffff;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  width: 75px;
+  height:75px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.mainplace{
+  width: 400px;
+  margin: 150px auto;
+  padding: 20px; 
+  align-items: center;
+  text-align: center;
+}
+.user-count{
+  font-weight: bolder;
+}
+.mainlogo{
+width:200px;
+height:200px;
+}
+    
+    
+    
+    /* Apply basic styles to the body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Style the header */
+        header {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* Style the h1 in the header */
+        header h1 {
+            margin: 0;
+        }
+        
+        /* Style the sections */
+        section {
+            padding: 20px;
+        }
+        
+        /* Style the section titles */
+        section h2 {
+            color: #333;
+        }
+        
+        /* Style paragraphs within sections */
+        section p {
+            color: #666;
+        }
+        
+        /* Style the unordered list */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        /* Style list items */
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Add background color to even list items */
+        li:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        /* Add padding to list items */
+        li {
+            padding: 5px;
+        }
+        
+        /* Style links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        /* Style links on hover */
+        a:hover {
+            text-decoration: underline;
+        }
+        .loginbar{
+          background-color: white !important;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%; /* Adjust container width for better mobile layout */
+  }
+
+  nav {
+    float: none; /* Remove float for navigation */
+    text-align: center; /* Center align navigation items */
+    margin-top: 20px; /* Add some space between logo and navigation */
+  }
+
+  nav ul {
+    margin: 0 auto; /* Center align navigation list */
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+    padding: 10px 0; /* Add vertical padding to navigation items */
+  }
+
+  .logo {
+    position: relative;
+    float: none;
+    display: block;
+    margin: 0 auto; /* Center align logo */
+    padding: 10px 0; /* Add some space around the logo */
+    text-align: center; /* Center align the logo image */
+  }
+
+  .mainplace {
+    width: 90%; /* Adjust width for better mobile layout */
+    margin: 50px auto; /* Center main content */
+    padding: 20px;
+  }
+
+  .mainlogo {
+    width: 150px; /* Adjust logo size for better mobile layout */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .counter {
+    font-size: 1.5em; /* Decrease font size for counter on mobile */
+  }
+}
+        </style>
+</head>
+<body>
+    <header>
+
+        <a class="logo" href="index.php"><img src="icon.svg"  class="logo"></a>
+            <nav>
+              <ul>
+                <li><a href="index.php">HOme</a></li>
+                <li  class="loginbar"><a href="login.php">Login</a></li>
+                <li><a href="signin.php">Signup</a></li>
+              </ul>
+            </nav>
+          </div>
+      </header>
+    <header>
+        <h1>Welcome to Talk!</h1>
+    </header>
+
+    <section id="about-us">
+        <h2>About Us:</h2>
+        <p>Talk was born out of the collaboration between two passionate students who shared a vision to create a seamless and engaging platform for connecting people through conversations. As part of our mini project, we embarked on this journey to develop a chat website that not only facilitates communication but also fosters meaningful interactions among users.</p>
+    </section>
+
+    <section id="our-mission">
+        <h2>Our Website:</h2>
+        <p>At Talk, our mission is to provide a user-friendly, secure, and enjoyable chatting experience for individuals across the globe. We strive to break barriers and bring people together, regardless of geographical location or cultural differences. Our aim is to cultivate a vibrant community where diverse voices are heard and valued.</p>
+    </section>
+
+    <section id="key-features">
+        <h2>Key Features:</h2>
+        <ul>
+            <li>User-Friendly Interface: We've designed Talk with simplicity and ease of use in mind. Our intuitive interface ensures that users can navigate effortlessly and focus on what matters most - the conversation.</li>
+            <li>Secure Communication: Your privacy and security are our top priorities. Talk employs robust encryption protocols to safeguard your conversations and personal information, giving you peace of mind while chatting.</li>
+            <li>Customizable Profiles: Personalize your Talk profile to reflect your unique personality. From profile pictures to bios, you have the freedom to express yourself and connect with others who share your interests.</li>
+            <li>Multi-Platform Compatibility: Whether you're on your desktop, tablet, or smartphone, Talk adapts to your device, ensuring seamless access to your conversations anytime, anywhere.</li>
+            <li>Dynamic Chat Rooms: Engage in lively discussions with like-minded individuals in our diverse range of chat rooms. From hobbies and interests to current events, there's a chat room for everyone.</li>
+            <li>Real-Time Messaging: Experience the thrill of real-time communication with instant messaging. Say goodbye to long delays and hello to lightning-fast conversations on Talk.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Developed by Nihar and Jeevan</p>
+    </footer>
+
+</body>
+</html>
